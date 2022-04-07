@@ -10,14 +10,157 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <title>Portfolio</title>
-  </head>
-  <body>
-    <h1>Welcome to CSS assignment!</h1>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <title>Portfolio</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="#">
+        <img src="assets\images\header.svg" alt="Logo here" height="36px">
+      </a>
+      <ul>
+        <li><a href="#homepage">Homepage</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#tech">Tech stack</a></li>
+        <li><a href="#blogs">Blogs</a></li>
+        <li><a href="#contact">Contact us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main content of the page -->
+  <main>
+
+    <!-- homepage -->
+    <section id="homepage">
+      <article>
+        <h1>Homepage name</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, maiores earum. Dolores cupiditate nobis
+          laboriosam, nisi facere expedita voluptatem quas maxime sint nihil optio nam maiores dolorum quaerat, ad unde?
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et rerum, laudantium tenetur accusamus vel mollitia
+          tempore in repudiandae ullam dolor saepe, magnam minus molestiae voluptas repellendus sapiente temporibus
+          corporis vero?
+        </p>
+      </article>
+      <aside>
+        <img src="assets\images\img-1.jpg" alt="Hero image" height="500px">
+      </aside>
+    </section>
+
+    <hr>
+
+    <!-- Services -->
+    <section id="services">
+      <h2>Services</h2>
+      <hr class="tiny-line">
+
+      <article>
+        <h3>Services 1</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quos pariatur culpa repellendus sint at cum
+          perferendis dolores fuga nulla consectetur quaerat enim, iusto quae! Impedit fugiat eos ab porro!</p>
+        <button>Read more</button>
+      </article>
+
+      <article>
+        <h3>Services 2</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quos pariatur culpa repellendus sint at cum
+          perferendis dolores fuga nulla consectetur quaerat enim, iusto quae! Impedit fugiat eos ab porro!</p>
+        <button>Read more</button>
+      </article>
+
+      <article>
+        <h3>Services 3</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quos pariatur culpa repellendus sint at cum
+          perferendis dolores fuga nulla consectetur quaerat enim, iusto quae! Impedit fugiat eos ab porro!</p>
+        <button>Read more</button>
+      </article>
+    </section>
+
+    <hr>
+
+    <!-- Tech stack -->
+    <section id="tech">
+      <h2>Tech stack</h2>
+      <hr class="tiny-line">
+
+      <!-- these Icons can be used for the tech stack banner -->
+      <div>
+        <i class="fab fa-js" aria-hidden="true"></i>
+        <i class="fab fa-html5" aria-hidden="true"></i>
+        <i class="fab fa-react" aria-hidden="true"></i>
+        <i class="fab fa-sass" aria-hidden="true"></i>
+        <i class="fab fa-css3" aria-hidden="true"></i>
+      </div>
+    </section>
+
+    <!-- Blogs -->
+    <section id="#blogs">
+      <h2>Blogs</h2>
+      <hr class="tiny-line">
+
+      <article>
+        <img src="assets\images\img-2.jpg" alt="Blog 1 image" width="500px">
+        <h3>Blog 1</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, aspernatur veniam hic aperiam vitae corrupti
+          ea, dignissimos cupiditate deleniti magni quibusdam minima reiciendis recusandae adipisci? Autem deleniti
+          nesciunt laboriosam odio!</p>
+        <a href="#">Link to blog content</a>
+      </article>
+
+      <article>
+        <img src="assets\images\img-3.jpg" alt="Blog 2 image" width="500px">
+        <h3>Blog 2</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, aspernatur veniam hic aperiam vitae corrupti
+          ea, dignissimos cupiditate deleniti magni quibusdam minima reiciendis recusandae adipisci? Autem deleniti
+          nesciunt laboriosam odio!</p>
+        <a href="#">Link to blog content</a>
+      </article>
+
+      <article>
+        <img src="assets\images\img-2.jpg" alt="Blog 3 image" width="500px">
+        <h3>Blog 3</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, aspernatur veniam hic aperiam vitae corrupti
+          ea, dignissimos cupiditate deleniti magni quibusdam minima reiciendis recusandae adipisci? Autem deleniti
+          nesciunt laboriosam odio!</p>
+        <a href="#">Link to blog content</a>
+      </article>
+
+    </section>
+
+    <!-- Form for submitting -->
+    <hr class="tiny-line">
+    <section>
+      <form action="">
+        <input type="text" id="name" autofocus autocomplete="off"><br>
+        <input type="email" id="email"><br>
+        <input type="text" id="comment"><br>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div>
+      <p>Copyright</p>
+    </div>
+
+    <ul>
+      <li><a href="#"><img src="" alt="Facebook"></a></li>
+      <li><a href="#"><img src="" alt="Twitter"></a></li>
+      <li><a href="#"><img src="" alt="LinkedIN"></a></li>
+    </ul>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/cc4be81cad.js" crossorigin="anonymous"></script>
+</body>
+
 </html>
