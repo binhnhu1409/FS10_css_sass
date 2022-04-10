@@ -1,0 +1,10 @@
+// This file contains all the CSS that handles the layout(container, grid systems...)
+@import './base';
+@import './components';
+
+body {
+    background-color: $color-theme;
+    @include para-text;
+}
+
+//header
