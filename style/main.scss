@@ -1,0 +1,70 @@
+// This file contains all the CSS that handles the layout(container, grid systems...)
+@import './base';
+@import './components';
+
+body {
+    background-color: $color-theme;
+    @include para-text;
+}
+
+//homepage
+section#homepage {
+    display: flex;
+    margin: 50px 20px;
+
+    article {
+        @include myflex(column, center);
+        padding-right: 20px;
+
+        h2 {
+            @include heading-text (60px);
+            text-transform: uppercase;
+            margin: 0;
+        }
+
+        p {
+            font-size: 20px;
+        }
+    }
+
+    svg {
+        @include frame(700px, auto);
+    }
+
+}
+
+
+
+//Services
+section#services {
+    display: flex;
+}
+
+//TechStack
+section#tech {
+    @include center-me;
+
+    i {
+        font-size: 60px;
+        width: 100px;
+        margin: 30px auto;
+    }
+}
+
+//Blogs --- stuck here 
+section#blogs {
+    display: flex;
+}
+
+//Contact form
+form {
+    line-height: 1.5;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
+
+    input,
+    textarea {
+        margin-top: 10px;
+    }
+}
