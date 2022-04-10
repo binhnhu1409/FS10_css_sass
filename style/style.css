@@ -1,0 +1,24 @@
+#logo {
+  grid-area: logo;
+}
+
+.nav-item {
+  grid-area: navitem;
+  list-style: none;
+}
+
+.container {
+  display: grid;
+  grid-template-areas: "logo navitem navitem navitem navitem navitem";
+}
+
+body {
+  background-color: #3D3D3D;
+  color: #ffffff;
+}
+
+h1 {
+  color: #FFD154;
+}
+
+/*# sourceMappingURL=style.css.map */
