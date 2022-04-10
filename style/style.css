@@ -288,4 +288,19 @@ form textarea {
   margin-top: 10px;
 }
 
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(-30deg);
+  }
+}
+svg path#sun {
+  animation: rotate 5s ease-in-out infinite;
+}
+
 /*# sourceMappingURL=style.css.map */
