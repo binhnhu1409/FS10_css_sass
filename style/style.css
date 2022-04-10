@@ -26,6 +26,9 @@ nav ul li.nav-item a {
   padding: 0 20px 0 20px;
   color: #3D3D3D;
 }
+nav ul li.nav-item a:hover {
+  text-decoration-style: wavy;
+}
 
 a {
   color: inherit;
@@ -35,6 +38,64 @@ a:hover {
   text-decoration: underline;
 }
 
+.center {
+  display: flex;
+  justify-content: center;
+}
+.center--header {
+  color: #FFD154;
+  font-family: Titillium Web;
+  font-size: 33px;
+}
+
+.hightlight {
+  border-bottom: 1px #FFD154 solid;
+  width: 300px;
+  margin: 30px auto;
+}
+
+.card {
+  background-color: #ffffff;
+  width: 30%;
+  padding: 10px;
+  margin: 10px;
+  opacity: 0.8;
+  color: #3D3D3D;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 400px) {
+  .card {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+button {
+  background-color: #FFD154;
+  border-radius: 50px;
+  font-weight: bold;
+  padding: 8px;
+  cursor: pointer;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+img {
+  width: 600px;
+  height: auto;
+  display: flex;
+}
+
+@media screen and (max-width: 500px) {
+  img,
+svg {
+    width: 100vw;
+    display: block;
+  }
+}
 .navbar {
   display: flex;
   flex-basis: 100px;
@@ -62,6 +123,9 @@ nav ul li.nav-item a {
   padding: 0 20px 0 20px;
   color: #3D3D3D;
 }
+nav ul li.nav-item a:hover {
+  text-decoration-style: wavy;
+}
 
 a {
   color: inherit;
@@ -71,11 +135,123 @@ a:hover {
   text-decoration: underline;
 }
 
+.center {
+  display: flex;
+  justify-content: center;
+}
+.center--header {
+  color: #FFD154;
+  font-family: Titillium Web;
+  font-size: 33px;
+}
+
+.hightlight {
+  border-bottom: 1px #FFD154 solid;
+  width: 300px;
+  margin: 30px auto;
+}
+
+.card {
+  background-color: #ffffff;
+  width: 30%;
+  padding: 10px;
+  margin: 10px;
+  opacity: 0.8;
+  color: #3D3D3D;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 400px) {
+  .card {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+button {
+  background-color: #FFD154;
+  border-radius: 50px;
+  font-weight: bold;
+  padding: 8px;
+  cursor: pointer;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+img {
+  width: 600px;
+  height: auto;
+  display: flex;
+}
+
+@media screen and (max-width: 500px) {
+  img,
+svg {
+    width: 100vw;
+    display: block;
+  }
+}
 body {
   background-color: #3D3D3D;
   color: #ffffff;
   font-family: Titillium Web;
   font-style: normal;
+}
+
+section#homepage {
+  display: flex;
+  margin: 50px 20px;
+}
+section#homepage article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 20px;
+}
+section#homepage article h2 {
+  color: #FFD154;
+  font-family: Titillium Web;
+  font-size: 60px;
+  text-transform: uppercase;
+  margin: 0;
+}
+section#homepage article p {
+  font-size: 20px;
+}
+section#homepage svg {
+  width: 700px;
+  height: auto;
+}
+
+section#services {
+  display: flex;
+}
+
+section#tech {
+  display: flex;
+  justify-content: center;
+}
+section#tech i {
+  font-size: 60px;
+  width: 100px;
+  margin: 30px auto;
+}
+
+section#blogs {
+  display: flex;
+}
+
+form {
+  line-height: 1.5;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 0;
+}
+form input,
+form textarea {
+  margin-top: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

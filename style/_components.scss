@@ -5,7 +5,7 @@
 .navbar {
     display: flex;
     flex-basis: 100px;
-    background-color: $heading-color;
+    background-color: $heading-theme;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -28,15 +28,15 @@ nav {
                 line-height: $nav-height;
                 display: block;
                 padding: 0 20px 0 20px;
-                color: $color-theme
+                color: $color-theme;
+
+                &:hover {
+                    text-decoration-style: wavy;
+                }
             }
         }
     }
 }
-
-
-
-
 
 //Links
 a {
@@ -45,6 +45,66 @@ a {
 
     &:hover {
         text-decoration: underline;
+    }
+}
 
+// Section heading
+.center {
+    @include center-me;
+
+    &--header {
+        @include heading-text(33px);
+    }
+}
+
+.hightlight {
+    border-bottom: 1px $heading-theme solid;
+    width: 300px;
+    margin: 30px auto;
+}
+
+//Card
+.card {
+    background-color: $para-color;
+    width: 30%;
+    padding: 10px;
+    margin: 10px;
+    opacity: 0.8;
+    color: $color-theme;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 400px) {
+    .card {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+//Button
+button {
+    background-color: $heading-theme;
+    border-radius: 50px;
+    font-weight: bold;
+    padding: 8px;
+    cursor: pointer;
+    margin: 0 auto;
+    @include center-me;
+    margin-top: 10px;
+}
+
+//Images
+img {
+    @include frame(600px, auto);
+    display: flex;
+}
+
+@media screen and (max-width: 500px) {
+
+    img,
+    svg {
+        width: 100vw;
+        display: block;
     }
 }
