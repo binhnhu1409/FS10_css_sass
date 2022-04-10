@@ -96,6 +96,23 @@ svg {
     display: block;
   }
 }
+footer {
+  display: flex;
+  flex-direction: row;
+  color: #FFD154;
+  font-size: 30px;
+}
+footer ul {
+  list-style: none;
+  flex-wrap: wrap;
+}
+footer ul p {
+  flex-basis: 2;
+}
+footer ul a {
+  display: block;
+}
+
 .navbar {
   display: flex;
   flex-basis: 100px;
@@ -193,6 +210,23 @@ svg {
     display: block;
   }
 }
+footer {
+  display: flex;
+  flex-direction: row;
+  color: #FFD154;
+  font-size: 30px;
+}
+footer ul {
+  list-style: none;
+  flex-wrap: wrap;
+}
+footer ul p {
+  flex-basis: 2;
+}
+footer ul a {
+  display: block;
+}
+
 body {
   background-color: #3D3D3D;
   color: #ffffff;

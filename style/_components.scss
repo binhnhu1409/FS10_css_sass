@@ -108,3 +108,24 @@ img {
         display: block;
     }
 }
+
+//Footer
+footer {
+    display: flex;
+    flex-direction: row;
+    color: $heading-theme;
+    font-size: 30px;
+
+    ul {
+        list-style: none;
+        flex-wrap: wrap;
+
+        p {
+            flex-basis: 2;
+        }
+
+        a {
+            display: block;
+        }
+    }
+}
