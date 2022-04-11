@@ -110,21 +110,33 @@ img {
 
 //Footer
 footer {
-    display: flex;
-    flex-direction: row;
-    color: $heading-theme;
-    font-size: 30px;
-
-    ul {
-        list-style: none;
-        flex-wrap: wrap;
-
-        p {
-            flex-basis: 2;
-        }
-
-        a {
-            display: block;
-        }
-    }
+	color: $heading-theme;
+	font-size: 25px;
+	text-align: center;
+	ul {
+		list-style: none;
+	}
 }
+
+@media screen and (min-width: 800px) {	
+	footer {
+		font-size: 30px;
+		ul {	
+			display: flex;
+			
+			li{
+				flex-basis: 80px;
+				flex: 0 0 auto;
+
+				&:nth-child(1) {
+					margin-right: auto;
+					margin-left: 100px;
+				}
+				a {
+					margin: 0 30px;
+				}
+			}
+		}
+	}
+}
+
