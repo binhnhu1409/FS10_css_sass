@@ -5,16 +5,43 @@
 
     50% {
         transform: rotate(-15deg);
+        opacity: 0.6;
     }
 
     100% {
         transform: rotate(-30deg);
+        opacity: 0.1;
+    }
+}
+
+@keyframes blowing {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        transform: skewY(25deg);
+    }
+
+    100% {
+        opacity: 0;
+        
     }
 }
 
 svg {
     path#sun {
         animation: rotate 10s ease-in-out infinite;
+    }
+
+    path#Vector_10,
+    path#Vector_11,
+    path#Vector_12,
+    path#Vector_13,
+    path#Vector_14,
+    path#Vector_26,
+    path#Vector_27 {
+        animation: blowing 5s ease-in-out infinite;
     }
 }
 
@@ -24,10 +51,12 @@ svg {
     }
 
     100% {
-        opacity: 0.5;
+        opacity: 0.2;
     }
 }
 
 .fa-angle-down {
-    animation: fading 1s ease-in infinite;
+    animation: fading 2s ease-in infinite;
 }
+
+

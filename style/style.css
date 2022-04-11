@@ -1,7 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap");
+@media screen and (min-width: 823px) {
+  .navbar {
+    display: flex;
+    flex-basis: 100px;
+  }
+  .navbar nav ul {
+    list-style: none;
+    flex-wrap: wrap;
+  }
+  .navbar nav ul li.nav-item {
+    font-size: large;
+  }
+  .navbar nav ul li.nav-item a {
+    line-height: 70px;
+    display: block;
+    padding: 0 20px 0 20px;
+    color: #3D3D3D;
+  }
+  .navbar nav ul li.nav-item a:hover {
+    text-decoration-style: wavy;
+  }
+}
 .navbar {
-  display: flex;
-  flex-basis: 100px;
   background-color: #FFD154;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -19,11 +39,9 @@ nav ul {
 }
 nav ul li.nav-item {
   font-size: large;
+  margin: 10px 0;
 }
 nav ul li.nav-item a {
-  line-height: 70px;
-  display: block;
-  padding: 0 20px 0 20px;
   color: #3D3D3D;
 }
 nav ul li.nav-item a:hover {
@@ -64,7 +82,7 @@ a:hover {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 823px) {
   .card {
     width: 100%;
     display: block;
@@ -122,9 +140,29 @@ footer ul {
     margin: 0 30px;
   }
 }
+@media screen and (min-width: 823px) {
+  .navbar {
+    display: flex;
+    flex-basis: 100px;
+  }
+  .navbar nav ul {
+    list-style: none;
+    flex-wrap: wrap;
+  }
+  .navbar nav ul li.nav-item {
+    font-size: large;
+  }
+  .navbar nav ul li.nav-item a {
+    line-height: 70px;
+    display: block;
+    padding: 0 20px 0 20px;
+    color: #3D3D3D;
+  }
+  .navbar nav ul li.nav-item a:hover {
+    text-decoration-style: wavy;
+  }
+}
 .navbar {
-  display: flex;
-  flex-basis: 100px;
   background-color: #FFD154;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -142,11 +180,9 @@ nav ul {
 }
 nav ul li.nav-item {
   font-size: large;
+  margin: 10px 0;
 }
 nav ul li.nav-item a {
-  line-height: 70px;
-  display: block;
-  padding: 0 20px 0 20px;
   color: #3D3D3D;
 }
 nav ul li.nav-item a:hover {
@@ -187,7 +223,7 @@ a:hover {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 823px) {
   .card {
     width: 100%;
     display: block;
@@ -296,7 +332,7 @@ body {
     font-size: 18px;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 823px) {
   section#homepage h2 {
     color: #FFD154;
     font-family: Titillium Web;
@@ -311,7 +347,7 @@ body {
     height: auto;
   }
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 823px) {
   section#services {
     display: flex;
   }
@@ -336,7 +372,7 @@ section#tech ul i {
   margin: 30px auto;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 823px) {
   section#blogs article {
     display: flex;
   }
@@ -365,13 +401,35 @@ form textarea {
   }
   50% {
     transform: rotate(-15deg);
+    opacity: 0.6;
   }
   100% {
     transform: rotate(-30deg);
+    opacity: 0.1;
+  }
+}
+@keyframes blowing {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    transform: skewY(25deg);
+  }
+  100% {
+    opacity: 0;
   }
 }
 svg path#sun {
   animation: rotate 10s ease-in-out infinite;
+}
+svg path#Vector_10,
+svg path#Vector_11,
+svg path#Vector_12,
+svg path#Vector_13,
+svg path#Vector_14,
+svg path#Vector_26,
+svg path#Vector_27 {
+  animation: blowing 5s ease-in-out infinite;
 }
 
 @keyframes fading {
@@ -379,11 +437,11 @@ svg path#sun {
     opacity: 1;
   }
   100% {
-    opacity: 0.5;
+    opacity: 0.2;
   }
 }
 .fa-angle-down {
-  animation: fading 1s ease-in infinite;
+  animation: fading 2s ease-in infinite;
 }
 
 /*# sourceMappingURL=style.css.map */
