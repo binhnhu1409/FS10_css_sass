@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap");
+
 .navbar {
   display: flex;
   flex-basis: 100px;
@@ -17,15 +18,18 @@ nav ul {
   list-style: none;
   flex-wrap: wrap;
 }
+
 nav ul li.nav-item {
   font-size: large;
 }
+
 nav ul li.nav-item a {
   line-height: 70px;
   display: block;
   padding: 0 20px 0 20px;
   color: #3D3D3D;
 }
+
 nav ul li.nav-item a:hover {
   text-decoration-style: wavy;
 }
@@ -34,6 +38,7 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
 a:hover {
   text-decoration: underline;
 }
@@ -42,6 +47,7 @@ a:hover {
   display: flex;
   justify-content: center;
 }
+
 .center--header {
   color: #FFD154;
   font-family: Titillium Web;
@@ -71,6 +77,7 @@ a:hover {
     margin-bottom: 20px;
   }
 }
+
 button {
   background-color: #FFD154;
   border-radius: 50px;
@@ -90,25 +97,30 @@ img {
 }
 
 @media screen and (max-width: 500px) {
+
   img,
-svg {
+  svg {
     width: 100vw;
     display: block;
   }
 }
+
 footer {
   display: flex;
   flex-direction: row;
   color: #FFD154;
   font-size: 30px;
 }
+
 footer ul {
   list-style: none;
   flex-wrap: wrap;
 }
+
 footer ul p {
   flex-basis: 2;
 }
+
 footer ul a {
   display: block;
 }
@@ -131,15 +143,18 @@ nav ul {
   list-style: none;
   flex-wrap: wrap;
 }
+
 nav ul li.nav-item {
   font-size: large;
 }
+
 nav ul li.nav-item a {
   line-height: 70px;
   display: block;
   padding: 0 20px 0 20px;
   color: #3D3D3D;
 }
+
 nav ul li.nav-item a:hover {
   text-decoration-style: wavy;
 }
@@ -148,6 +163,7 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
 a:hover {
   text-decoration: underline;
 }
@@ -156,6 +172,7 @@ a:hover {
   display: flex;
   justify-content: center;
 }
+
 .center--header {
   color: #FFD154;
   font-family: Titillium Web;
@@ -185,6 +202,7 @@ a:hover {
     margin-bottom: 20px;
   }
 }
+
 button {
   background-color: #FFD154;
   border-radius: 50px;
@@ -204,25 +222,30 @@ img {
 }
 
 @media screen and (max-width: 500px) {
+
   img,
-svg {
+  svg {
     width: 100vw;
     display: block;
   }
 }
+
 footer {
   display: flex;
   flex-direction: row;
   color: #FFD154;
   font-size: 30px;
 }
+
 footer ul {
   list-style: none;
   flex-wrap: wrap;
 }
+
 footer ul p {
   flex-basis: 2;
 }
+
 footer ul a {
   display: block;
 }
@@ -238,12 +261,14 @@ section#homepage {
   display: flex;
   margin: 50px 20px;
 }
+
 section#homepage article {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-right: 20px;
 }
+
 section#homepage article h2 {
   color: #FFD154;
   font-family: Titillium Web;
@@ -251,9 +276,11 @@ section#homepage article h2 {
   text-transform: uppercase;
   margin: 0;
 }
+
 section#homepage article p {
   font-size: 20px;
 }
+
 section#homepage svg {
   width: 700px;
   height: auto;
@@ -267,6 +294,7 @@ section#tech {
   display: flex;
   justify-content: center;
 }
+
 section#tech i {
   font-size: 60px;
   width: 100px;
@@ -283,6 +311,7 @@ form {
   text-align: center;
   padding: 20px 0;
 }
+
 form input,
 form textarea {
   margin-top: 10px;
@@ -292,13 +321,16 @@ form textarea {
   0% {
     transform: rotate(0deg);
   }
+
   50% {
     transform: rotate(-15deg);
   }
+
   100% {
     transform: rotate(-30deg);
   }
 }
+
 svg path#sun {
   animation: rotate 5s ease-in-out infinite;
 }

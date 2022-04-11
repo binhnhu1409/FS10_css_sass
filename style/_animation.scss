@@ -14,6 +14,23 @@
 
 svg {
     path#sun {
-        animation: rotate 5s ease-in-out infinite;
+        animation: rotate 10s ease-in-out infinite;
     }
+}
+
+@keyframes fading {
+    0% {
+        opacity: 0;
+        transform: translateX(-2000px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.fa-angle-down {
+    animation: fading 5s ease-in infinite;
+    transform-origin: center;
 }
