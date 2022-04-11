@@ -20,17 +20,14 @@ svg {
 
 @keyframes fading {
     0% {
-        opacity: 0;
-        transform: translateX(-2000px);
+        opacity: 1;
     }
 
     100% {
-        opacity: 1;
-        transform: translateX(0);
+        opacity: 0.5;
     }
 }
 
 .fa-angle-down {
-    animation: fading 5s ease-in infinite;
-    transform-origin: center;
+    animation: fading 1s ease-in infinite;
 }

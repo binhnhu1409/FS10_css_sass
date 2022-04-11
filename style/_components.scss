@@ -96,8 +96,7 @@ button {
 
 //Images
 img {
-    @include frame(600px, auto);
-    display: flex;
+    @include frame(400px, auto);
 }
 
 @media screen and (max-width: 500px) {
@@ -105,7 +104,7 @@ img {
     img,
     svg {
         width: 100vw;
-        display: block;
+        margin: 0;
     }
 }
 
