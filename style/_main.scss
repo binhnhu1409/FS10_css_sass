@@ -8,7 +8,7 @@ body {
 }
 
 //homepage
-@media screen and (min-width: 800px) {
+@media screen and (min-width: $lg-screen) {
     section#homepage {
         display: flex;
         margin: 50px 20px;
@@ -19,8 +19,7 @@ body {
         }
 
         h2 {
-            @include heading-text (60px);
-            text-transform: uppercase;
+            @include main-text (60px);
             margin: 0;
         }
 
@@ -34,34 +33,76 @@ body {
     }
 }
 
-section#homepage {
-    h2 {
-        @include heading-text (40px);
-    }
+@media screen and (max-width: $lg-screen) {
+    section#homepage {
 
-    p {
-        font-size: 18px;
+        aside {
+            text-align: center;
+            svg {
+                @include frame (500px, auto);
+            }
+        }
+        
+        h2 {
+            @include main-text (40px);
+        }
+
+        p {
+            font-size: 18px;
+        }
     }
 }
+
+@media screen and (max-width: $md-screen) {
+    section#homepage {
+
+        h2 {
+            @include main-text (33px);
+        }
+        
+        aside {
+            text-align: center;
+            svg {
+                @include frame (100%, auto)
+            }
+        }   
+    }
+}
+
+
 
 //Services
-section#services {
-    display: flex;
+@media screen and (min-width: $md-screen) {
+    section#services {
+        display: flex;
+    }
 }
+
+section#services {
+    margin: 0 auto;
+}
+
 
 //TechStack
 section#tech {
     @include center-me;
 
-    i {
-        font-size: 60px;
-        width: 100px;
-        margin: 30px auto;
+    ul {
+        display: flex;
+        list-style: none;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        i {
+            font-size: 60px;
+            width: 100px;
+            margin: 30px auto;
+        }
     }
 }
 
-//Blogs --- stuck here 
-@media screen and (min-width: 800px) {
+//Blogs
+@media screen and (min-width: $md-screen) {
     section#blogs {
         article {
             display: flex;

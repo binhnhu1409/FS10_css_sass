@@ -74,11 +74,11 @@ a {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: $md-screen) {
     .card {
         width: 100%;
         display: block;
-        margin-bottom: 20px;
+        margin: 0 0 20px 0;
     }
 }
 
@@ -99,10 +99,9 @@ img {
     @include frame(400px, auto);
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: $sm-screen) {
 
-    img,
-    svg {
+    img {
         width: 100vw;
         margin: 0;
     }
